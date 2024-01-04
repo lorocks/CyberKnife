@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="default">
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://r2_description</uri>
+      <pose>0 -2 0 0 0 1.57</pose>
+      <plugin name="gravity_compensation" filename="libGravityCompensationPlugin.so">
+        <uri>model://r2_description</uri>
+      </plugin>
+    </include>
+
+    <scene>
+      <shadows>false</shadows>
+    </scene>
+
+    
+  </world>
+</sdf>

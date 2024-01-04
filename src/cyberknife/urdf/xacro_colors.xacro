@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:macro name="body_color">
+      <visual>
+      <material>
+          <ambient>0.54902 0.18039 0.18039 1</ambient>
+          <diffuse>0.54902 0.18039 0.18039 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+      </material>
+      </visual>
+  </xacro:macro>
+
+  <xacro:macro name="gold_color">
+      <visual>
+      <material>
+          <ambient>1 0.8431 0 1</ambient>
+          <diffuse>1 0.8431 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+      </material>
+      </visual>
+  </xacro:macro>
+
+  <xacro:macro name="gray_color">
+      <visual>
+      <material>
+          <ambient>0.33333 0.33333 0.33333 1</ambient>
+          <diffuse>0.33333 0.33333 0.33333 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+      </material>
+      </visual>
+  </xacro:macro>
+
+</robot>

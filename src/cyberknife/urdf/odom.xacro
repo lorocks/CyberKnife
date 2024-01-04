@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <gazebo>
+        <plugin filename="libodometry_plugin.so" name="odometry_plugin">
+          <frame>laser_Link</frame>
+          <world_frame>dummy_frame</world_frame>
+        </plugin>
+      </gazebo>
+
+</robot>

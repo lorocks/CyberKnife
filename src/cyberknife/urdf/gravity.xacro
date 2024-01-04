@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<robot>
+
+    <gazebo reference="joint2_link">
+        <plugin filename="libGravityCompensationPlugin.so" name="gravity_compensation">
+        </plugin>   
+    </gazebo>
+    <gazebo reference="joint3_link">
+        <plugin filename="libGravityCompensationPlugin.so" name="gravity_compensation">
+        </plugin>   
+    </gazebo>
+    <gazebo reference="joint4_link">
+        <plugin filename="libGravityCompensationPlugin.so" name="gravity_compensation">
+        </plugin>   
+    </gazebo>
+    <gazebo reference="joint5_link">
+        <plugin filename="libGravityCompensationPlugin.so" name="gravity_compensation">
+        </plugin>   
+    </gazebo>
+
+</robot>

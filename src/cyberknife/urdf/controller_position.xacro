@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+<ros2_control name="GazeboSystem" type="system">
+    <hardware>
+        <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    <joint name="base2">
+        <command_interface name="position">
+            <param name="min">-180</param>
+            <param name="max">180</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+    </joint>
+    <joint name="joint1">
+        <command_interface name="position">
+            <param name="min">-90</param>
+            <param name="max">45.85</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+    </joint>
+    <joint name="joint2">
+        <command_interface name="position">
+            <param name="min">-55.6</param>
+            <param name="max">230</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+    </joint>
+    <joint name="joint3">
+        <command_interface name="position">
+            <param name="min">-180</param>
+            <param name="max">180</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+    </joint>
+    <joint name="joint4">
+        <command_interface name="position">
+            <param name="min">-88.85</param>
+            <param name="max">88.85</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+    </joint>
+    <joint name="joint5">
+        <command_interface name="position">
+            <param name="min">-180</param>
+            <param name="max">180</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+    </joint>
+    <!-- <joint name="laser">
+        <command_interface name="position">
+            <param name="min">-180</param>
+            <param name="max">180</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+    </joint> -->
+    
+</ros2_control>
+
+<gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+        <parameters>$(find cyberknife)/config/control_config_pos.yaml</parameters>
+    </plugin>
+</gazebo>
+
+</robot>
