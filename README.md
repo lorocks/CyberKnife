@@ -28,7 +28,8 @@ There are three launch files:
 A world file which contains the added Robonaut2 asset is used to simulate a patient for the CyberKnife.
 
 ## Config
-In the config directory, there are two .yaml files to setup the controller__manager for ros2_control. One uses position control and the other velocity control.
+In the config directory, there are two .yaml files to setup the controller__manager for ros2_control. 
+One uses position control and the other velocity control.
 There are two extra files, Jacopianp.txt and TransformationMatrix.txt which are pickled SymPy symbolic expression which is loaded by the package to reduce code execution time and not have to compute the matrices on every run.
 
 
