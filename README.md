@@ -10,19 +10,19 @@ Implementation of CyberKnife in ROS2
 Odometry plugin built to be used in the package
 
 ## Launch Files
-There are three launch files:-
-	- display.launch.py:- Used to launch RViz
-	- cyberknife_pos.launch.py:- Used to launch CyberKnife using the position controller
-	- cyberknife_vel.launch.py:- Used to launch CyberKnife using the velocity controller
+There are three launch files:
+ - display.launch.py:- Used to launch RViz
+ - cyberknife_pos.launch.py:- Used to launch CyberKnife using the position controller
+ - cyberknife_vel.launch.py:- Used to launch CyberKnife using the velocity controller
 	
 ## Nodes
-	- draw_circle_pos.py:- Draws a circle for inverse kinematic validation using position controller
-	- draw_circle_vel.py:- Draws a circle for inverse kinematic validation using velocity controller
-	- gravity_stabalize.py:- Node that stabalizes the CyberKnife at initial configuration negating the influence of gravity
-	- pid_joint_state.py:- Node that uses PI controller to move towards target point and remain at constant position coordinates, but varying Euler angles.
-	- teleop_gui_slider.py:- Used to teleoperate the CyberKnife using GUI sliders as a position controller scheme
-	- teleop_gui_slider_velocity.py:- Used to teleoperate the CyberKnife using GUI sliders as a velocity controller scheme
-	- teleop_keyboard: Used to teleoperate the CyberKnife using the keyboard as a velocity controller scheme
+ - draw_circle_pos.py:- Draws a circle for inverse kinematic validation using position controller
+ - draw_circle_vel.py:- Draws a circle for inverse kinematic validation using velocity controller
+ - gravity_stabalize.py:- Node that stabalizes the CyberKnife at initial configuration negating the influence of gravity
+ - pid_joint_state.py:- Node that uses PI controller to move towards target point and remain at constant position coordinates, but varying Euler angles.
+ - teleop_gui_slider.py:- Used to teleoperate the CyberKnife using GUI sliders as a position controller scheme
+ - teleop_gui_slider_velocity.py:- Used to teleoperate the CyberKnife using GUI sliders as a velocity controller scheme
+ - teleop_keyboard: Used to teleoperate the CyberKnife using the keyboard as a velocity controller scheme
 
 ## Worlds
 A world file which contains the added Robonaut2 asset is used to simulate a patient for the CyberKnife.
